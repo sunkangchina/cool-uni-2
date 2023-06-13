@@ -18,7 +18,7 @@
 			<view class="cl-image__error"> 加载失败 </view>
 		</slot>
 
-		<image
+		<image @click="click"
 			class="cl-image__target"
 			:src="src"
 			:mode="mode"
@@ -109,7 +109,9 @@ export default {
 			this.isError = false;
 			this.$emit("load", e);
 		},
-
+		click(e){
+			this.$emit("click")
+		},
 		onPreview() {
 			// 点击是否预览图片
 			if (this.previewList) {
