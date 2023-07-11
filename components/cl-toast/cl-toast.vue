@@ -62,7 +62,7 @@ export default {
 				message: "",
 				duration: 2000,
 				type: "default",
-				position: "bottom",
+				position: "top",
 				timer: null,
 				onClose: null,
 				iconSize: 22,
