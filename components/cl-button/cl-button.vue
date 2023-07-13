@@ -24,6 +24,7 @@
 		@opensetting="opensetting"
 		@launchapp="launchapp"
 		@tap.stop="tap"
+		@chooseavatar="chooseavatar"
 	>
 		<view class="cl-button__loading">
 			<cl-loading
@@ -178,6 +179,9 @@ export default {
 	},
 
 	methods: {
+		chooseavatar(e) {
+			this.$emit("chooseavatar", e);
+		},
 		getphonenumber(e) {
 			this.$emit("getphonenumber", e);
 		},
