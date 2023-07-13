@@ -118,7 +118,7 @@
 				<input
 					class="cl-input__inner"
 					v-model="value2"
-					type="text"
+					:type="type"
 					:password="password"
 					:placeholder="placeholder"
 					:disabled="isDisabled"
