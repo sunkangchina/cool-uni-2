@@ -1,5 +1,5 @@
 <template>
-	<text
+	<text @tap.stop="click"
 		:class="['cl-icon', `cl-icon-${name2}`]"
 		:style="{
 			fontSize: parseRpx(size),
@@ -38,6 +38,9 @@ export default {
 
 	methods: {
 		parseRpx,
+		click(){
+			this.$emit('click')
+		}
 	},
 };
 </script>
