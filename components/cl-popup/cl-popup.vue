@@ -193,8 +193,8 @@
 	.close_icon {
 		z-index: 99999;
 		position: absolute;
-		top: 10px;
-		right: 5px;
+		top: 20px;
+		right: 15px;
 		cursor: pointer;
 	}
 </style>
