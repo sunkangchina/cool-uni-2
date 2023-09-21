@@ -39,13 +39,21 @@
 					]"
 				>
 					<slot :item="item" :index="index">
-						<image
+						<image v-if="item && item.url"
 							class="cl-swiper-item__image"
 							:style="{
 								'border-radius': radius
 							}"
 							:mode="imageMode"
 							:src="item.url"
+						/>
+						<image v-else
+							class="cl-swiper-item__image"
+							:style="{
+								'border-radius': radius
+							}"
+							:mode="imageMode"
+							:src="item"
 						/>
 					</slot>
 				</view>
