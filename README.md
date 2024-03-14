@@ -6,7 +6,13 @@ yarn add cl-uni-2
 
 ## 手册
 
-[手册](https://doc-cool.qihetaiji.com/)
+[在线手册](https://doc-cool.qihetaiji.com/)
+
+## 更多UI
+
+[uView2.0](https://github.com/umicro/uView2.0)
+
+
 
 
 ## 注：
