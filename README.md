@@ -1,19 +1,18 @@
-## UI
+## 安装
 
 ~~~
 yarn add cl-uni-2
 ~~~
 
+## 手册
 
-对 cool-uni vue2定制
-
-手册 
-
-https://uni-docs.cool-js.com/uni/components/feedback/toast.html
-
-GIT
-
-https://github.com/sunkangchina/cool-uni-2
+[手册](https://doc-cool.qihetaiji.com/)
 
 
+注：
 
+官方在2的版本上早不上心，因项目中使用了该UI且uniapp使用vue2版本，故单独自行维护。
+
+如有BUG可发PULL或直接提ISSUES
+
+  
