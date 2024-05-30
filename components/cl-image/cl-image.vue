@@ -18,7 +18,7 @@
 			<view class="cl-image__error"> 加载失败 </view>
 		</slot>
 
-		<image @click="click"
+		<image @click="click" @longpress="longpress" 
 			class="cl-image__target"
 			:src="src"
 			:mode="mode"
@@ -111,6 +111,9 @@ export default {
 		},
 		click(e){
 			this.$emit("click")
+		},
+		longpress(e){
+			this.$emit("longpress")
 		},
 		onPreview() {
 			// 点击是否预览图片
