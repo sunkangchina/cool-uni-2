@@ -1,13 +1,12 @@
 {
 	"name": "cl-uni-2",
-	"version": "1.8.28",
+	"version": "1.8.29",
 	"description": "",
 	"main": "index.js",
 	"scripts": {},
 	"author": "icssoa",
 	"license": "Apache-2.0",
-	"keywords": [
-	],
+	"keywords": [],
 	"homepage": "https://uni-docs.cool-js.com/uni/components/feedback/toast.html",
 	"sideEffects": false
 }
