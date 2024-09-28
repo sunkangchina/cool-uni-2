@@ -14,6 +14,7 @@
 			}"
 		>
 			<view class="cl-list-item__container">
+				<slot name="left"></slot>
 				<view class="cl-list-item__icon" v-if="$slots.icon">
 					<slot name="icon"></slot>
 				</view>
