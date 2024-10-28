@@ -121,6 +121,10 @@ export default {
 			type: Boolean,
 			default: true,
 		},
+		yii:{
+			type:Boolean,
+			default:false,
+		}
 	},
 
 	mixins: [Form],
@@ -227,9 +231,15 @@ export default {
 								header: this.headers,
 								formData: this.data,
 								success: (res) => {
-									const { data } = JSON.parse(res.data);
-									this.update(data);
-									this.$emit("success", data);
+									if(this.yii){
+										let data = JSON.parse(res.data);
+										this.$emit("success", data);
+										this.update(data.http_url);
+									}else{
+										const { data } = JSON.parse(res.data);
+										this.update(data);
+										this.$emit("success", data);
+									}  
 								},
 								fail: (err) => {
 									this.$emit("error", err);
