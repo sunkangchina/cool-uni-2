@@ -15,7 +15,7 @@
 
 			<image
 				v-else
-				class="cl-avatar__target"
+				class="cl-avatar__target" @click="click"
 				:src="src"
 				:mode="mode"
 				:lazy-load="lazyLoad"
@@ -73,7 +73,9 @@ export default {
 		isShape() {
 			return `cl-avatar--${this.shape}`;
 		},
-
+		click(e){
+			this.$emit("click")
+		},
 		height() {
 			return this.size + "rpx";
 		},
