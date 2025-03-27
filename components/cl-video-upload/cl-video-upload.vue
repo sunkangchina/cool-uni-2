@@ -7,18 +7,15 @@
     <view class="video-list">
       <view 
         class="video-item"
-        v-for="(item, index) in videoList"
-        :key="index"
-        :style="videoItemStyle"
+        v-for="(item, index) in videoList" 
       >
         <video
-          class="video-player"
+          class="video-player" style="width:200px;height:150px;"
           :src="item.url"
           :controls="false"
           :show-play-btn="false"
           :show-center-play-btn="true"
-          objectFit="cover"
-          @click="previewVideo(item.url)"
+          objectFit="cover" 
         />
         
         
