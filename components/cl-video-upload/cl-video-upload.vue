@@ -6,7 +6,7 @@
     <!-- 视频列表 -->
     <view class="video-list"> 
       <view class="video-item" v-for="(item, index) in videoList"> 
-        <video class="video-player" :src="item.url" :controls="true"
+        <video class="video-player" :src="item.url" 
           :show-play-btn="false" :show-center-play-btn="true" objectFit="cover" /> 
         <!-- 删除按钮 -->
         <view class="delete-btn" @click.stop="removeVideo(index)">
@@ -204,7 +204,11 @@
       flex-wrap: wrap;
       gap: 15rpx;
     }
- 
+    
+    .video-item{
+      position: relative;
+    }
+    
     .add-btn {
       position: relative;
       background-color: #f5f5f5;
@@ -227,7 +231,7 @@
       position: absolute;
       top: 8rpx;
       right: 8rpx;
-      z-index: 3;
+      z-index: 9999999;
       background: rgba(255, 255, 255, 0.8);
       border-radius: 50%;
     }
